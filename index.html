@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marvel Rivals - Complete Character Database (Updated August 2025)</title>
+    <title>Marvel Rivals - Character and Team-up Database</title>
     <style>
         * {
             margin: 0;
@@ -395,19 +395,18 @@
 <body>
     <div class="header">
         <h1>MARVEL RIVALS</h1>
-        <p>Complete Character Database & Team-Up Guide</p>
-        <div class="update-badge">Updated August 2025 - Season 3.5</div>
+        <p>Complete Character Database & Team-Up Guide - by Caiden</p>
         <div class="stats">
             <div class="stat">
                 <div class="stat-number" id="totalHeroes">41</div>
                 <div class="stat-label">Total Heroes</div>
             </div>
             <div class="stat">
-                <div class="stat-number" id="totalVanguards">12</div>
+                <div class="stat-number" id="totalVanguards">11</div>
                 <div class="stat-label">Vanguards</div>
             </div>
             <div class="stat">
-                <div class="stat-number" id="totalDuelists">23</div>
+                <div class="stat-number" id="totalDuelists">25</div>
                 <div class="stat-label">Duelists</div>
             </div>
             <div class="stat">
@@ -452,14 +451,19 @@
             {
                 name: "Spider-Man",
                 role: "duelist",
-                emoji: "🕷️",
                 season: "Launch",
+                emoji: "🕷️",
                 description: "Your friendly neighborhood Spider-Man swings into action with incredible agility and web-slinging abilities. Peter Parker uses his spider-sense and acrobatic skills to outmaneuver enemies and control key areas of the battlefield.",
                 abilities: [
-                    { name: "Web Shooters", description: "Primary fire with web projectiles that slow and damage enemies" },
-                    { name: "Web Swing", description: "Quickly traverse the battlefield using web lines for superior mobility" },
-                    { name: "Spider-Sense", description: "Enhanced awareness warns of incoming threats and dangers" },
-                    { name: "Web Cluster Bomb", description: "Ultimate ability that creates a devastating area-of-effect explosion" }
+                    { name: "Spider-Power (Normal attack)", description: "Swing fists forward to strike, dealing extra damage to the enemy with a Spider-Tracer." },
+                    { name: "Web-Cluster (Normal attack)", description: "Shoot a Web-Cluster that deals damage and attaches a Spider-Tracer to the hit enemy." },
+                    { name: "Spectacular Spin (Ultimate Ability)", description: "Launch Web-Clusters all around to damage and Stun enemies." },
+                    { name: "Web-swing", description: "Shoot a strand of webbing to swing." },
+                    { name: "Get Over Here!", description: "Shoot webbing to reel in the hit enemy. If the enemy is tagged with a Spider-Tracer, Spider-Man will get pulled to them instead." },
+                    { name: "Amazing Combo", description: "Launch an enemy upward, dealing extra damage to the enemy with a Spider-Tracer." },
+                    { name: "Thwip and Flip", description: "Perform a double jump." },
+                    { name: "Spider-Sense (Passive)", description: "Give a warning of enemies that have been around." },
+                    { name: "Wall Crawl", description: "Press Space to wall crawl, and while crawling, left-click to sprint." },
                 ]
             },
             {
@@ -469,36 +473,47 @@
                 season: "Launch",
                 description: "Tony Stark's cutting-edge armor provides devastating ranged firepower and aerial superiority. As a duelist, Iron Man excels at eliminating key targets with precision strikes and advanced weaponry systems.",
                 abilities: [
-                    { name: "Repulsor Ray", description: "Primary energy beam weapon with high damage output" },
-                    { name: "Hover Jets", description: "Aerial mobility and positioning advantage over ground-based enemies" },
-                    { name: "Micro Missiles", description: "Homing projectiles that track and eliminate targets" },
-                    { name: "Gamma Override", description: "Ultimate ability that supercharges all weapons systems" }
+                    { name: "Repulsor Blast (Normal attack)", description: "Fire nano-pulse cannons to deal damage. After firing twice in a row, the third attack fires both repulsors at once for increased damage." },
+                    { name: "Unibeam (Normal attack)", description: "Channel the nano-pulse cannon into a focused beam that deals continuous high damage." },
+                    { name: "Invincible Pulse Cannon (Ultimate Ability)", description: "Fire a devastating pulse cannon in the targeted direction, delivering catastrophic damage to the targeted area upon impact." },
+                    { name: "Hyper-Velocity", description: "Activate Hyper-Velocity state for swift forward flight with 100% increased movement speed." },
+                    { name: "Armor Overdrive", description: "Enhance damage of Repulsor Blast and Unibeam while gaining Bonus Health." },
+                    { name: "Micro-Missile Barrage", description: "During Hyper-Velocity or Armor Overdrive, launch a missile bombardment directly below." }
                 ]
             },
             {
                 name: "Hulk",
                 role: "vanguard",
-                emoji: "💚",
                 season: "Launch",
+                emoji: "💚",
                 description: "The incredible Hulk brings raw power and devastating melee attacks to the frontline. Bruce Banner's alter ego excels at disrupting enemy formations and absorbing massive amounts of damage while protecting his team.",
                 abilities: [
-                    { name: "Gamma Burst", description: "Primary ranged attack that fires gamma energy projectiles" },
-                    { name: "Thunderclap", description: "Devastating shockwave that damages and knocks back multiple enemies" },
-                    { name: "Leap", description: "Jump great distances to close gaps and reach high ground" },
-                    { name: "Worldbreaker", description: "Ultimate ground pound that creates massive area damage and disruption" }
+                    { name: "Gamma Ray Gun (Bruce Banner - Normal attack)", description: "Fire a gamma Ray Gun to deal damage at the enemy player." },
+                    { name: "Puny Banner (Bruce Banner)", description: "Transform yourself from Bruce Banner into Hero Hulk." },
+                    { name: "Gamma Grenade (Bruce Banner)", description: "Throw a Gamma Grenade that deals damage to the enemy player." },
+                    { name: "Heavy Blow (Hero Hulk and Monster Hulk - Normal attack)", description: "Swing your fists forwards which deals damage to the enemy player." },
+                    { name: "Hulk Smash! (Hero Hulk - Ultimate Ability)", description: "Unleash stored gamma energy. This transforms the player from Hero Hulk to Monster Hulk for a limited amount of time." },
+                    { name: "Indestructible Guard (Hero Hulk)", description: "Generate gamma shields for Hulk and allies. This absorbs and converts damage into energy for Hulk Smash!" },
+                    { name: "Radioactive Lockdown (Hero Hulk and Monster Hulk)", description: "Irradiate enemies by emitting gamma energy, this renders the enemy immobile for a short duration." },
+                    { name: "Incredible Leap (Hero Hulk and Monster Hulk)", description: "Hold the jump button to charge up a powerful leap that knocks a flying enemy to the ground." },
+                    { name: "Gamma Burst (Hero Hulk and Monster Hulk)", description: "Emit gamma-ray bursts that deal damage to nearby enemies." },
+                    { name: "World Breaker (Monster Hulk)", description: "Grab an enemy and smash them into the ground, dealing massive damage." },
                 ]
             },
             {
                 name: "Doctor Strange",
                 role: "vanguard",
-                emoji: "🔮",
                 season: "Launch",
+                emoji: "🧙‍♂️",
                 description: "The Master of the Mystic Arts protects his team with powerful magical shields and reality manipulation. Stephen Strange uses ancient sorcery to control battlefield positioning and provide mystical protection.",
                 abilities: [
-                    { name: "Eye of Agamotto", description: "Primary attack that fires mystical energy beams" },
-                    { name: "Shield of the Seraphim", description: "Creates protective barriers to absorb incoming damage" },
-                    { name: "Mystic Projection", description: "Teleport through mystical dimensions for repositioning" },
-                    { name: "Maelstrom of Madness", description: "Ultimate ability creating a massive mystical vortex that damages enemies" }
+                    { name: "Daggers of Denak (Normal attack)", description: "Throw mystical daggers of Denak that deal damage to enemies." },
+                    { name: "Eye of Agamotto (Ultimate Ability)", description: "Separate the Souls of nearby enemies from their physical bodies. Any damage to their Soul is transferred to their physical bodies." },
+                    { name: "Cloak of Levitation", description: "Ascend and levitate above the battlefield for a brief amount of time."},
+                    { name: "Maelstrom of Madness", description: "Release Dark Magic that deals damage to enemies." },
+                    { name: "Pentagram of Farallah", description: "Open portals between two locations for quick travel." },
+                    { name: "Shield of Seraphim", description: "Create a shield that protects the player against damage." },
+                    { name: "Price of Magic (Passive)", description: "Doctor Strange will be cursed with Anti-Heal if Dark Magic peaks for too long." },
                 ]
             },
             {
@@ -508,10 +523,13 @@
                 season: "Launch",
                 description: "K-pop sensation turned superhero, Luna Snow provides crucial healing and support abilities. Her ice-based powers can freeze enemies while simultaneously healing and buffing allied heroes.",
                 abilities: [
-                    { name: "Frost Rhythm", description: "Primary attack with ice projectiles that slow and damage enemies" },
-                    { name: "Ice Arts", description: "Healing projectiles that restore ally health over time" },
-                    { name: "Freeze Ray", description: "Slowing beam that reduces enemy movement and attack speed" },
-                    { name: "Share the Stage", description: "Ultimate buff that enhances all nearby allies' abilities and provides team-wide bonuses" }
+                    { name: "Light and dark ice (Normal attack)", description: "Fire ice shots that damage enemies or heal allies." },
+                    { name: "Ice Arts", description: "Launch ice shards for several seconds that heal allies and herself or damage enemies." },
+                    { name: "Absolute Zero", description: "Fire a clump of ice that deals damage, freezes the enemy, and heals Luna Snow slightly." },
+                    { name: "Fate of Both Worlds (Ultimate Ability)", description: "Cast an aura by dancing that either heals allies or grants them a damage boost, depending on which mode is active. These modes can be switched between freely." },
+                    { name: "Share the stage", description: "Attach Idol Aura to an ally, this restores health when Luna Snow is healing other allies. "},
+                    { name: "Smooth Skate (Passive)", description: "Move forwards and start ice skating, gaining speed and higher jumps." },
+                    { name: "Cryo Heart (Passive)", description: "Automatically self heal when casting Ice darts, Absolute Zero or Light and shadow Karma. "}
                 ]
             },
             {
@@ -521,10 +539,12 @@
                 season: "Launch",
                 description: "The Sub-Mariner brings the power of the ocean to the battlefield. Namor combines superhuman strength with aquatic abilities, making him a formidable duelist capable of controlling water-based attacks.",
                 abilities: [
-                    { name: "Aquatic Dominion", description: "Primary ranged attack with water-based projectiles" },
-                    { name: "Trident Strike", description: "Powerful melee attack with extended reach and high damage" },
-                    { name: "Aquatic Dash", description: "Swift movement ability that damages enemies in the path" },
-                    { name: "Wrath of the Seven Seas", description: "Ultimate ability summoning massive tidal waves and water damage across large areas" }
+                    { name: "Trident of Neptune (Normal attack)", description: "Powerful melee attack with extended reach and high damage using his trident." },
+                    { name: "Horn of Proteus (Ultimate Ability)", description: "Summon Giganto that leaps on top of enemies within range, rendering them immobile and dealing massive damage." },
+                    { name: "Aquatic Dominion", description: "Summon a Monstro Spawn that attacks enemies." },
+                    { name: "Blessing of the Deep", description: "Namor summons a protective barrier and leap into the air." },
+                    { name: "Tidal Fall", description: "Hold the Jump button to fall slowly." },
+                    { name: "Wrath of the Seven Seas", description: "Launch a trident forwards to deal damage, then Namor can direct ALL Monstro Spawn to attack the nearest hit enemy." }
                 ]
             },
             {
@@ -534,10 +554,14 @@
                 season: "Launch",
                 description: "The God of Mischief uses illusion magic and trickery to support his team through deception and misdirection. Loki's cunning abilities can turn the tide of battle through strategic manipulation.",
                 abilities: [
-                    { name: "Mystical Projectile", description: "Magical energy attacks that seek out enemy weak points" },
-                    { name: "Illusion", description: "Create decoy clones to confuse and misdirect enemies" },
-                    { name: "Teleport", description: "Instant repositioning for strategic advantage or escape" },
-                    { name: "God of Stories", description: "Ultimate transformation that enhances all magical abilities and provides team-wide buffs" }
+                    { name: "Mystical Missile (Normal attack)", description: "Launch magical energy attacks at enemies to deal damage and at allies to heal them." },
+                    { name: "God of Mischief (Ultimate Ability)", description: "Shapeshift into an ally or enemy hero and use all their abilities except their teamup abilities." },
+                    { name: "Regeneration Domain", description: "Use Rune Stones to create a magical field that converts damage taken by allies within its radius into healing energy." },
+                    { name: "Doppelganger", description: "Project an illusion that can use some of Loki's abilities." },
+                    { name: "Devious Exchange", description: "Swap positions with the selected illusion for strategic repositioning." },
+                    { name: "Deception", description: "Become invisible and conjure an illusion to deceive enemies." },
+                    { name: "Backstab", description: "Pull out a dagger to stab enemies, dealing extra damage when attacking from behind." },
+                    { name: "Deception", description: "Become invisible and create an illusion to deceive enemies." }
                 ]
             },
             {
@@ -547,10 +571,12 @@
                 season: "Launch",
                 description: "T'Challa combines Wakandan technology with enhanced physical abilities. As the Black Panther, he excels in close-combat situations with vibranium-enhanced claws and advanced tactical equipment.",
                 abilities: [
-                    { name: "Vibranium Daggers", description: "Ranged projectile attacks with vibranium-enhanced weapons" },
-                    { name: "Vibranium Claws", description: "Devastating melee attacks that can shred through enemy defenses" },
-                    { name: "Pounce", description: "Leap attack that closes distance and damages targets" },
-                    { name: "King of the Dead", description: "Ultimate ability channeling ancestral power for enhanced combat abilities" }
+                    { name: "Vibranium Claws (Normal attack)", description: "Slice Vibranium Claws forward to deal damage." },
+                    { name: "Bast's Descent (Ultimate Ability)", description: "Summon Bast, pouncing forward, dealing damage, and attaching a Vibranium Mark to hit enemies." },
+                    { name: "Sprint Rend", description: "Lunge forward and deal damage to enemies. Hitting an enemy with a Vibranium Mark produces bonus Health and refreshes the ability." },
+                    { name: "Spinning Kick", description: "Spiral forward and attach a Vibranium Mark to hit enemies." },
+                    { name: "Spear Toss", description: "Toss a Vibranium energy spear forward, creating a Vibranium Force Field and attaching a Vibranium Mark to enemies in its radius." },
+                    { name: "Subtle Step", description: "Hold Space to run on a wall; perform a jump after detaching from the wall." }
                 ]
             },
             {
@@ -560,10 +586,11 @@
                 season: "Launch",
                 description: "Illyana Rasputina wields both mutant teleportation powers and mystical sorcery. Magik's ability to open portals to Limbo makes her an unpredictable duelist with demonic magic at her disposal.",
                 abilities: [
-                    { name: "Limbo Shard", description: "Primary projectile attack using demonic energy from Limbo" },
-                    { name: "Soulsword", description: "Mystical blade that disrupts magical defenses and deals pure damage" },
-                    { name: "Stepping Disc", description: "Teleportation portals for instant battlefield repositioning" },
-                    { name: "Darkchild", description: "Ultimate transformation into her demonic form with enhanced abilities" }
+                    { name: "Limbo Shard (Normal attack)", description: "Fire projectile attacks using demonic energy from Limbo." },
+                    { name: "Darkchild (Ultimate Ability)", description: "Transform into demonic form with enhanced abilities and increased power." },
+                    { name: "Soulsword", description: "Wield mystical blade that disrupts magical defenses and deals pure damage." },
+                    { name: "Stepping Disc", description: "Create teleportation portals for instant battlefield repositioning." },
+                    { name: "Limbo Strike", description: "Dash through Limbo to attack enemies with enhanced damage." }
                 ]
             },
             {
@@ -573,36 +600,42 @@
                 season: "Launch",
                 description: "This genetically enhanced raccoon provides tactical support through advanced weaponry and battlefield gadgets. Rocket's engineering expertise makes him invaluable for area control and team support.",
                 abilities: [
-                    { name: "Burst Fire", description: "Rapid-fire weapon system for sustained damage output" },
-                    { name: "Jetpack", description: "Aerial mobility and elevated shooting positions" },
-                    { name: "C4 Explosives", description: "Deployable mines for area denial and crowd control" },
-                    { name: "Strategic Command", description: "Ultimate buff that coordinates team-wide tactical advantages" }
+                    { name: "Burst Fire (Normal attack)", description: "Rapid-fire weapon system for sustained damage output." },
+                    { name: "Strategic Command (Ultimate Ability)", description: "Coordinate team-wide tactical advantages and buffs." },
+                    { name: "Jetpack", description: "Activate aerial mobility for elevated shooting positions." },
+                    { name: "C4 Explosives", description: "Deploy remote-detonated mines for area denial and crowd control." },
+                    { name: "Repair Mode", description: "Provide healing and armor restoration to allies and turrets." }
                 ]
             },
             {
                 name: "Groot",
                 role: "vanguard",
-                emoji: "🌳",
                 season: "Launch",
+                emoji: "🌳",
                 description: "I am Groot! This tree-like being serves as a living barrier, using his regenerative abilities and wooden strength to protect allies while controlling battlefield positioning.",
                 abilities: [
-                    { name: "Spore Volley", description: "Primary ranged attack launching spore projectiles" },
-                    { name: "Branch Extension", description: "Extendable limbs for long-range attacks and crowd control" },
-                    { name: "Wall", description: "Create barrier walls to block enemy movement and projectiles" },
-                    { name: "Incarnation Verdancy", description: "Ultimate growth form that enhances all defensive capabilities and area control" }
+                    { name: "Vine Strike (Normal Attack)", description: "Launch Vines to inflict damage to the enemy." },
+                    { name: "Strangling Prison (Ultimate Ability)", description: "Fire a massive vine cluster that imprisons the enemy team." },
+                    { name: "Thornlash Wall", description: "Grow a Thornlash Wall. When placed, it inflicts damage onto enemies that are attacked by Groot or his allies." },
+                    { name: "Ironwood Wall", description: "Grow an Ironwood Wall. When placed, it inflicts damage onto the enemy team that are attacked by Groot and his allies. It also gives bonus health to Groot." },
+                    { name: "Spore Bomb", description: "Throw a Spore Bomb at the enemy to inflict damage." },
+                    { name: "Flora Colossus (Passive)", description: "Awakens walls when Groot or allies are nearby, granting additional effects." }
                 ]
             },
             {
                 name: "Peni Parker",
                 role: "vanguard",
-                emoji: "🕸️",
                 season: "Launch",
+                icon: "/icon/peni_parker.png",
                 description: "Young pilot of the SP//dr mech suit, Peni provides technological protection and support. Her spider-powers combined with advanced machinery make her a unique defensive specialist.",
                 abilities: [
-                    { name: "Bionic Spider-Nest", description: "Primary attack deploying spider-bots for damage and reconnaissance" },
-                    { name: "Web Shooters", description: "Mechanical web-based attacks with enhanced range and precision" },
-                    { name: "Cyber Web", description: "Digital barriers that protect allies from incoming damage" },
-                    { name: "Bionic Spider", description: "Ultimate mech enhancement that boosts all systems and provides area control" }
+                    { name: "Cyber-Web Cluster (Normal Attack)", description: "Launch a web-cluster to inflict damage onto the enemy." },
+                    { name: "Spider-Sweeper (Ultimate Ability)", description: "Launch enemies up that are in the path of Peni. Also deploy Arachno-Mines, Spider-Drones and Cyber-Webs onto the ground to inflict further damage to the enemy." },
+                    { name: "Bionic Spider-Nest", description: "Place a Spider-Nest. This nest periodically spawns Spider-Drones and creates Cyber-Webs. Gain healing overtime and a movement boost by being in the Cyber-Webs." },
+                    { name: "Arachno-Mine", description: "Deploy Arachno-Mines that explode and deal damage to enemies. These are concealed in the Cyber-Webs." },
+                    { name: "Cyber-Bond", description: "Shoot a web strand where Peni can link to for increased movement." },
+                    { name: "Wall Crawl", description: "Hold the jump button to crawl onto a wall." },
+                    { name: "Cyber-Web Snare", description: "Throw a web that immobilizes the targeted enemy or creates a Cyber-Web." },
                 ]
             },
             {
@@ -612,23 +645,27 @@
                 season: "Launch",
                 description: "Ororo Munroe commands the elemental forces of weather as Storm. Her atmospheric control abilities make her a versatile duelist capable of both ranged attacks and battlefield manipulation.",
                 abilities: [
-                    { name: "Lightning Lash", description: "Primary electrical attacks with chain lightning effects" },
-                    { name: "Lightning Strike", description: "Targeted electrical attacks that can bounce between enemies" },
-                    { name: "Wind Boost", description: "Enhanced mobility through weather manipulation and flight" },
-                    { name: "Omega Storm", description: "Ultimate weather control affecting the entire battlefield with lightning and wind" }
+                    { name: "Lightning Lash (Normal attack)", description: "Strike with electrical attacks that can chain between enemies." },
+                    { name: "Omega Hurricane (Ultimate Ability)", description: "Summon ultimate weather control affecting the entire battlefield with lightning and powerful winds." },
+                    { name: "Lightning Strike", description: "Call down targeted electrical attacks that can bounce between multiple enemies." },
+                    { name: "Wind Boost", description: "Enhance mobility through weather manipulation and gain flight capabilities." },
+                    { name: "Atmospheric Pressure (Passive)", description: "Build up energy from dealing damage to enhance abilities." }
                 ]
             },
             {
                 name: "Magneto",
                 role: "vanguard",
-                emoji: "🧲",
                 season: "Launch",
-                description: "Master of magnetism Erik Lehnsherr controls all metallic objects with devastating precision. As a vanguard, Magneto creates protective barriers while manipulating the battlefield environment.",
+                emoji: "🧲",
+                description: "Master of magnetism Max Eisenhardt controls all metallic objects with devastating precision. As a vanguard, Magneto creates protective barriers while manipulating the battlefield environment.",
                 abilities: [
-                    { name: "Metal Projectile", description: "Primary attack launching magnetically controlled metallic debris" },
-                    { name: "Magnetic Shield", description: "Protective barriers formed from environmental metal" },
-                    { name: "Metallic Surge", description: "Area control through widespread magnetic manipulation" },
-                    { name: "Magnetic Supremacy", description: "Ultimate ability controlling all metal on the battlefield for massive damage" }
+                    { name: "Iron Volley (Normal attack)", description: "Fire a magnetic orb to inflict damage onto the enemy." },
+                    { name: "Meteor M (Ultimate Ability)", description: "Forge an iron meteor to crash down on enemies. The orb can absorb enemy projectiles which enhances its power." },
+                    { name: "Metallic Curtain", description: "Form a metallic curtain that acts like a shield, blocking enemy projectiles." },
+                    { name: "Metal Bulwark", description: "Create a shield around an ally to protect them from damage." },
+                    { name: "Iron Bulwark", description: "Create a shield around yourself to protect from damage." },
+                    { name: "Mag-Cannon", description: "Create a mag-cannon and launch a metallic mass at the enemies." },
+                    { name: "Magnetic Descent", description: "Hold the jump button to descend slowly while in the air." }
                 ]
             },
             {
@@ -638,10 +675,11 @@
                 season: "Launch",
                 description: "Peter Quill leads the Guardians with his dual energy pistols and tactical expertise. Star-Lord's balanced approach to combat makes him an effective duelist with both offensive and mobility options.",
                 abilities: [
-                    { name: "Element Guns", description: "Dual pistols with multiple elemental ammunition types for sustained damage" },
-                    { name: "Jet Boot Flight", description: "Aerial mobility with directional control and maneuverability" },
-                    { name: "Galactic Legend", description: "Team coordination buffs and tactical advantages for nearby allies" },
-                    { name: "Star-Lord", description: "Ultimate ability channeling Celestial heritage for enhanced combat performance" }
+                    { name: "Element Guns (Normal attack)", description: "Fire dual pistols with multiple elemental ammunition types for sustained damage." },
+                    { name: "Star-Lord (Ultimate Ability)", description: "Channel Celestial heritage for massive enhanced combat performance." },
+                    { name: "Rocket Propulsion Boots", description: "Activate jet boots for aerial mobility with directional control and high-speed movement." },
+                    { name: "Stellar Shift", description: "Quick dash ability for rapid repositioning during combat." },
+                    { name: "Galactic Legend (Passive)", description: "Provide team coordination buffs and tactical advantages for nearby allies." }
                 ]
             },
             {
@@ -651,10 +689,11 @@
                 season: "Launch",
                 description: "Mantis provides crucial healing and emotional support through her empathic abilities. Her unique powers allow her to boost ally morale while disrupting enemy coordination.",
                 abilities: [
-                    { name: "Spore Blast", description: "Primary projectile attack that can put enemies to sleep" },
-                    { name: "Life Orb", description: "Healing projectiles that restore ally health and provide buffs" },
-                    { name: "Spore Sleep", description: "Area sleep effect that incapacitates multiple enemies" },
-                    { name: "Soul Resurgence", description: "Ultimate mass revival and healing ability that can revive fallen teammates" }
+                    { name: "Spore Blast (Normal attack)", description: "Fire projectile attacks that can put enemies to sleep." },
+                    { name: "Soul Resurgence (Ultimate Ability)", description: "Perform mass revival and healing that can revive fallen teammates with enhanced health." },
+                    { name: "Life Orb", description: "Launch healing projectiles that restore ally health and provide temporary buffs." },
+                    { name: "Spore Sleep", description: "Create area sleep effect that incapacitates multiple enemies simultaneously." },
+                    { name: "Nature's Blessing", description: "Provide healing over time to connected allies." }
                 ]
             },
             {
@@ -664,10 +703,11 @@
                 season: "Launch",
                 description: "Frank Castle brings military precision and overwhelming firepower to eliminate targets with extreme prejudice. The Punisher's arsenal makes him one of the most dangerous duelists in close and mid-range combat.",
                 abilities: [
-                    { name: "Assault Rifle", description: "High-damage automatic weapon with sustained fire capability" },
-                    { name: "Smoke Grenade", description: "Area denial and concealment for tactical positioning" },
-                    { name: "Scourge Turret", description: "Deployable automated weapon system for area control" },
-                    { name: "Nanotech Armor", description: "Ultimate defensive enhancement with weapon upgrades and damage resistance" }
+                    { name: "Assault Rifle (Normal attack)", description: "Fire high-damage automatic weapon with sustained fire capability." },
+                    { name: "Nanotech Armor (Ultimate Ability)", description: "Activate defensive enhancement with weapon upgrades and significant damage resistance." },
+                    { name: "Smoke Grenade", description: "Deploy area denial and concealment for tactical positioning and escape." },
+                    { name: "Scourge Turret", description: "Place deployable automated weapon system for area control." },
+                    { name: "Combat Reload", description: "Enhanced reload speed and weapon handling." }
                 ]
             },
             {
@@ -677,10 +717,11 @@
                 season: "Launch",
                 description: "Wanda Maximoff wields chaos magic with reality-warping potential. As one of the most powerful beings in the Marvel universe, Scarlet Witch can manipulate probability and matter at a molecular level.",
                 abilities: [
-                    { name: "Chaos Magic", description: "Primary attack with reality-warping projectiles that phase through barriers" },
-                    { name: "Mystic Protection", description: "Magical shields that absorb and redirect damage" },
-                    { name: "Telekinesis", description: "Move objects and enemies with psychic force for positioning and damage" },
-                    { name: "Reality Erasure", description: "Ultimate ability that can devastate enemies with reality-altering chaos magic" }
+                    { name: "Chaos Magic (Normal attack)", description: "Fire reality-warping projectiles that phase through barriers and obstacles." },
+                    { name: "Reality Erasure (Ultimate Ability)", description: "Unleash devastating chaos magic that can alter reality and devastate enemies." },
+                    { name: "Mystic Protection", description: "Generate magical shields that absorb and redirect incoming damage." },
+                    { name: "Chthon's Grasp", description: "Use telekinetic force to move objects and enemies for positioning control and damage." },
+                    { name: "Dark Seal", description: "Mark enemies with chaos magic for enhanced damage." }
                 ]
             },
             {
@@ -690,10 +731,11 @@
                 season: "Launch",
                 description: "Goddess of Death from Asgard, Hela commands necromantic powers and infinite blade generation. Her mastery over death magic makes her a terrifying duelist with overwhelming offensive capabilities.",
                 abilities: [
-                    { name: "Goddess of Death", description: "Primary projectile attack with death magic properties" },
-                    { name: "Necrosword", description: "Conjured blades with death magic properties for melee combat" },
-                    { name: "Piercing Night", description: "Projectile attacks that ignore defensive abilities and pierce through enemies" },
-                    { name: "Subjugate", description: "Ultimate necromancy that can instantly eliminate weakened foes and deal massive damage" }
+                    { name: "Goddess of Death (Normal attack)", description: "Fire projectile attacks with death magic properties that pierce enemies." },
+                    { name: "Subjugate (Ultimate Ability)", description: "Activate necromancy that can instantly eliminate weakened foes and deal massive area damage." },
+                    { name: "Necrosword", description: "Conjure blades with death magic properties for devastating melee combat." },
+                    { name: "Piercing Night", description: "Launch projectile attacks that ignore defensive abilities and pierce through multiple enemies." },
+                    { name: "Soul Drainer", description: "Drain life force from enemies to restore health." }
                 ]
             },
             {
@@ -703,10 +745,13 @@
                 season: "Launch",
                 description: "Eddie Brock and the symbiote unite as Venom, a terrifying vanguard with shapeshifting abilities and brutal close-combat prowess. The alien symbiote grants incredible strength and defensive capabilities.",
                 abilities: [
-                    { name: "Symbiote Spike", description: "Primary ranged attack launching symbiote projectiles" },
-                    { name: "Symbiote Strike", description: "Morphing attacks with extended reach and high damage" },
-                    { name: "Web Swing", description: "Web-based mobility similar to Spider-Man for battlefield traversal" },
-                    { name: "We Are Venom", description: "Ultimate transformation enhancing all symbiote abilities and providing massive damage resistance" }
+                    { name: "Dark Predation (Normal attack)", description: "Unleash Venom's tentacles to inflict damage onto enemies." },
+                    { name: "Feast of the Abyss (Ultimate Ability)", description: "Devour enemies by first burrowing underground and then rising up to strike." },
+                    { name: "Venom Swing", description: "Take to the skies with a single swing." },
+                    { name: "Symbiotic Resilience", description: "Gain Bonus Health against damage. When Venom's health lowers, the greater the Bonus Health becomes." },
+                    { name: "Frenzied Arrival", description: "Leap into the air and slam down onto the ground, dealing damage to enemies in the area." },
+                    { name: "Cellular Corrosion", description: "Release tentacles that slow down enemies nearby, causing damage over time." },
+                    { name: "Alien Biology", description: "Climb walls with symbiote powers." }
                 ]
             },
             {
@@ -716,10 +761,11 @@
                 season: "Launch",
                 description: "Logan brings his adamantium claws and healing factor into brutal close-quarters combat. Wolverine's berserker rage and regenerative abilities make him nearly unstoppable in melee combat.",
                 abilities: [
-                    { name: "Lethal Leap", description: "Primary attack combining leap and claw strikes for high damage" },
-                    { name: "Adamantium Claws", description: "Razor-sharp claws that can cut through almost any material" },
-                    { name: "Berserker Rage", description: "Enhanced damage and speed when health is low" },
-                    { name: "Last Stand", description: "Ultimate ability unleashing maximum berserker potential with temporary invulnerability" }
+                    { name: "Adamantium Claws (Normal attack)", description: "Slash with razor-sharp claws that can cut through almost any material." },
+                    { name: "Last Stand (Ultimate Ability)", description: "Unleash maximum berserker potential with temporary invulnerability and enhanced damage." },
+                    { name: "Lethal Leap", description: "Perform leap attack combining mobility and claw strikes for high burst damage." },
+                    { name: "Berserker Barrage", description: "Execute rapid claw strikes with increased attack speed." },
+                    { name: "Regenerative Healing Factor (Passive)", description: "Continuously regenerate health, with increased healing at low health." }
                 ]
             },
             {
@@ -729,10 +775,11 @@
                 season: "Launch",
                 description: "Betsy Braddock combines telepathic abilities with ninja training and her signature psychic katana. Psylocke excels at assassinating key targets with her unique blend of martial arts and mental powers.",
                 abilities: [
-                    { name: "Psychic Knife", description: "Primary ranged attack with psychic energy projectiles" },
-                    { name: "Psychic Katana", description: "Energy blade that cuts through both physical and mental defenses" },
-                    { name: "Telekinetic Thrust", description: "Psychic force attacks that push and damage enemies" },
-                    { name: "Psychic Maelstrom", description: "Ultimate psychic storm that devastates multiple enemies with mental damage" }
+                    { name: "Psychic Knife (Normal attack)", description: "Throw ranged psychic energy projectiles at enemies." },
+                    { name: "Psychic Maelstrom (Ultimate Ability)", description: "Create psychic storm that devastates multiple enemies with mental damage." },
+                    { name: "Psychic Katana", description: "Wield energy blade that cuts through both physical and mental defenses." },
+                    { name: "Telekinetic Thrust", description: "Project psychic force attacks that push and damage enemies." },
+                    { name: "Psi-Strike", description: "Execute powerful psychic dash attack through enemies." }
                 ]
             },
             {
@@ -742,10 +789,12 @@
                 season: "Launch",
                 description: "Steve Rogers leads from the front with his iconic vibranium shield and tactical leadership. Captain America provides team coordination while absorbing damage and inspiring allies through his unwavering courage.",
                 abilities: [
-                    { name: "Shield Assault", description: "Primary attack combining shield throws and melee strikes" },
-                    { name: "Shield Throw", description: "Ricocheting shield attack that can hit multiple enemies" },
-                    { name: "Rally", description: "Inspire nearby allies with damage and speed buffs" },
-                    { name: "Living Legend", description: "Ultimate ability that enhances team-wide performance and provides damage resistance" }
+                    { name: "Sentinel Strike (Normal attack)", description: "Strike enemies up close. Landing the second hit enables a shield throw that can ricochet." },
+                    { name: "Freedom Charge (Ultimate Ability)", description: "Charge forward with shield held high, granting both himself and allies continuous Bonus Health and Movement Boosts." },
+                    { name: "Leading Dash", description: "Boost speed forward, enabling Fearless Leap." },
+                    { name: "Vibranium Energy Saw", description: "Hurl the energy-charged shield to strike enemies in a path." },
+                    { name: "Liberty Rush", description: "Raise the shield and charge forward, pushing through enemies." },
+                    { name: "Super-Soldier Slam", description: "Slam down from the sky onto targeted area, knocking enemies airborne." }
                 ]
             },
             {
@@ -755,10 +804,11 @@
                 season: "Launch",
                 description: "The God of Thunder wields Mjolnir to control lightning and protect his allies. Thor's divine strength and weather manipulation make him a formidable frontline fighter with area-control abilities.",
                 abilities: [
-                    { name: "God Blast", description: "Primary ranged attack launching lightning-infused energy" },
-                    { name: "Mjolnir Strike", description: "Hammer attacks with lightning damage and knockback" },
-                    { name: "Thunder Flight", description: "Aerial mobility using Mjolnir's power for positioning" },
-                    { name: "God of Thunder", description: "Ultimate lightning storm affecting the entire battlefield with massive area damage" }
+                    { name: "God Blast (Normal attack)", description: "Launch lightning-infused energy projectiles at enemies." },
+                    { name: "God of Thunder (Ultimate Ability)", description: "Summon massive lightning storm affecting entire battlefield with devastating area damage." },
+                    { name: "Mjolnir Strike", description: "Execute hammer attacks with lightning damage and powerful knockback." },
+                    { name: "Thunder Flight", description: "Use Mjolnir's power for aerial mobility and rapid positioning." },
+                    { name: "Awakening Rune", description: "Place empowered rune that enhances nearby allies." }
                 ]
             },
             {
@@ -768,10 +818,14 @@
                 season: "Launch",
                 description: "Clint Barton's precision archery and tactical expertise make him a deadly long-range duelist. Hawkeye's trick arrows and perfect aim allow him to control engagements from any distance.",
                 abilities: [
-                    { name: "Hunter's Bow", description: "Primary precision arrows with perfect accuracy and high damage" },
-                    { name: "Explosive Arrow", description: "Area-of-effect arrows that damage multiple enemies" },
-                    { name: "Grappling Arrow", description: "Mobility arrow that allows quick repositioning and escape" },
-                    { name: "Hunter's Arsenal", description: "Ultimate ability cycling through all arrow types rapidly for sustained damage" }
+                    { name: "Piercing Arrows (Normal attack)", description: "Shoot powerful arrows with perfect accuracy and high damage." },
+                    { name: "Blast Arrow (Normal attack)", description: "Fire three explosive arrows simultaneously." },
+                    { name: "Hunter's Sight (Ultimate Ability)", description: "Capture Afterimages of enemies in view. Damage dealt to Afterimage transfers to corresponding enemy." },
+                    { name: "Hypersonic Arrow", description: "Shoot arrow that deals damage twice to enemies in path and inflicts Slow. Can knock down flying heroes." },
+                    { name: "Crescent Slash", description: "Unsheathe katana and slash forward, launching enemies up." },
+                    { name: "Ronin Slash", description: "Swing wakizashi to strike frontal enemies and deflect all incoming projectiles." },
+                    { name: "Skyward Leap", description: "Perform double jump in direction of movement." },
+                    { name: "Archer's Focus (Passive)", description: "Aim at enemy to improve focus, enhancing Piercing Arrow damage." }
                 ]
             },
             {
@@ -781,10 +835,12 @@
                 season: "Launch",
                 description: "Natasha Romanoff uses espionage training and advanced technology to eliminate high-priority targets. Black Widow excels at stealth operations and precise elimination of key enemies.",
                 abilities: [
-                    { name: "Widow's Bite", description: "Primary electrical attacks that stun and damage enemies" },
-                    { name: "Stealth Mode", description: "Temporary invisibility for repositioning and surprise attacks" },
-                    { name: "Grappling Hook", description: "Quick mobility tool for vertical and horizontal movement" },
-                    { name: "Red Room", description: "Ultimate enhancement that boosts all combat abilities and weapon damage" }
+                    { name: "Widow's Bite Baton (Normal attack)", description: "Strike with enhanced electric batons for close combat." },
+                    { name: "Red Room Rifle (Normal attack)", description: "Fire precision sniper rifle for long-range elimination." },
+                    { name: "Electro Plasma Explosion (Ultimate Ability)", description: "Switch rifle to Destruction mode and unleash electro-plasma blast, damaging enemies and leaving plasma that slows." },
+                    { name: "Fleet Foot", description: "Dash forward and enable powerful jump for mobility and escape." },
+                    { name: "Edge Dancer", description: "Unleash spinning kick to knock enemies airborne." },
+                    { name: "Grappling Hook", description: "Fire grappling line for quick vertical and horizontal movement." }
                 ]
             },
             
@@ -793,13 +849,15 @@
                 name: "Jeff the Land Shark",
                 role: "strategist",
                 emoji: "🦈",
-                season: "Season 1",
+                season: "Launch",
                 description: "This adorable land shark provides surprising healing support and battlefield control. Despite his cute appearance, Jeff can swallow enemies whole and provide crucial team support through his unique abilities.",
                 abilities: [
-                    { name: "Joyful Splash", description: "Primary healing projectiles that restore ally health" },
-                    { name: "Healing Splash", description: "Water-based healing that affects multiple allies in an area" },
-                    { name: "Burrow", description: "Underground movement for surprise positioning and escape" },
-                    { name: "It's Jeff!", description: "Ultimate ability that can instantly eliminate low-health enemies by swallowing them" }
+                    { name: "Joyful Splash (Normal attack)", description: "Fire healing water projectiles that restore ally health." },
+                    { name: "It's Jeff! (Ultimate Ability)", description: "Dive underground and emerge to swallow enemies, instantly eliminating low-health targets or spitting them out for damage." },
+                    { name: "Healing Bubble", description: "Create water-based healing area that affects multiple allies continuously." },
+                    { name: "Aqua Burst", description: "Release water explosion that damages enemies and heals allies in area." },
+                    { name: "Burrow", description: "Move underground for surprise positioning, escape, and invulnerability." },
+                    { name: "Whirlpool (Passive)", description: "Create healing zones that benefit nearby teammates." }
                 ]
             },
             {
@@ -809,10 +867,12 @@
                 season: "Season 1",
                 description: "Bucky Barnes brings military precision and his cybernetic arm to devastating effect. The Winter Soldier specializes in mid-range combat with powerful weaponry and tactical positioning.",
                 abilities: [
-                    { name: "Burst Fire", description: "Primary automatic rifle with precise damage output" },
-                    { name: "Bionic Arm", description: "Enhanced melee attacks with increased damage and range" },
-                    { name: "Smoke Grenade", description: "Area denial and concealment for tactical repositioning" },
-                    { name: "Armed and Dangerous", description: "Ultimate ability enhancing all weapons and mobility for increased lethality" }
+                    { name: "Kraken Rifle (Normal attack)", description: "Fire automatic rifle with precise damage output and high accuracy." },
+                    { name: "Armed and Dangerous (Ultimate Ability)", description: "Enhance all weapons and mobility for increased lethality, gaining attack speed and movement buffs." },
+                    { name: "Bionic Hook", description: "Launch grappling line from cybernetic arm for rapid repositioning." },
+                    { name: "Cold Front", description: "Throw cryo-grenade that freezes and damages enemies in area." },
+                    { name: "Trooper's Fist", description: "Execute enhanced melee attacks with bionic arm dealing increased damage." },
+                    { name: "Tactical Advantage (Passive)", description: "Gain damage boost when attacking from behind or flanking." }
                 ]
             },
             
@@ -824,10 +884,12 @@
                 season: "Season 2",
                 description: "Sue Storm uses her invisibility and force field powers to protect allies and control battlefield positioning. Her ability to become invisible makes her invaluable for tactical support and enemy disruption.",
                 abilities: [
-                    { name: "Psychic Blast", description: "Primary ranged attack using force field energy" },
-                    { name: "Force Field", description: "Protective barriers that absorb incoming damage for allies" },
-                    { name: "Invisibility", description: "Stealth capability that hides herself and nearby allies from enemy detection" },
-                    { name: "Malice", description: "Ultimate transformation that enhances all force-based abilities with offensive power" }
+                    { name: "Photon Beam (Normal attack)", description: "Fire force field energy beams at enemies for consistent damage." },
+                    { name: "Malice (Ultimate Ability)", description: "Transform into Malice, enhancing all force-based abilities with offensive power and increased damage output." },
+                    { name: "Force Dome", description: "Create protective barrier dome that absorbs incoming damage for allies inside." },
+                    { name: "Invisible State", description: "Activate invisibility to hide herself and can extend to nearby allies from detection." },
+                    { name: "Psychokinetic Blast", description: "Release concentrated force field explosion dealing area damage." },
+                    { name: "Force Field (Passive)", description: "Generate protective shields that absorb damage automatically." }
                 ]
             },
             {
@@ -837,10 +899,12 @@
                 season: "Season 2",
                 description: "Marc Spector channels the power of Khonshu as Moon Knight, bringing Egyptian mysticism to modern combat. His multiple personalities and crescent-shaped weapons make him unpredictable in battle.",
                 abilities: [
-                    { name: "Ancient Ankh", description: "Primary projectile attack channeling Egyptian mystical power" },
-                    { name: "Crescent Darts", description: "Throwing weapons that ricochet and track enemies with precision" },
-                    { name: "Ankh Portal", description: "Teleportation ability linked to Egyptian mysticism for repositioning" },
-                    { name: "Hand of Khonshu", description: "Ultimate ability channeling the Egyptian god's power for massive damage" }
+                    { name: "Ancient Ankh (Normal attack)", description: "Fire projectiles channeling Egyptian mystical power at enemies." },
+                    { name: "Hand of Khonshu (Ultimate Ability)", description: "Channel the Egyptian moon god's power for massive damage and enhanced combat abilities." },
+                    { name: "Crescent Darts", description: "Throw signature weapons that ricochet and track enemies with precision." },
+                    { name: "Moonblade", description: "Slash with mystical crescent blade in close combat." },
+                    { name: "Ankh Teleport", description: "Use Egyptian mysticism portals for instant repositioning." },
+                    { name: "Lunar Cycle (Passive)", description: "Gain enhanced abilities during nighttime or in shadows." }
                 ]
             },
             {
@@ -850,10 +914,12 @@
                 season: "Season 2",
                 description: "Johnny Storm ignites the battlefield with his pyrokinetic abilities and aerial superiority. The Human Torch's fire-based attacks and flight capabilities make him a mobile damage dealer.",
                 abilities: [
-                    { name: "Flame Blast", description: "Primary fire projectiles with burning damage over time" },
-                    { name: "Flame On", description: "Flight mode with enhanced mobility and fire immunity" },
-                    { name: "Fireball", description: "Explosive projectile attacks that create area-of-effect fire damage" },
-                    { name: "Supernova", description: "Ultimate explosion that devastates the entire battlefield with intense heat" }
+                    { name: "Flame Shot (Normal attack)", description: "Fire projectiles with burning damage over time effect." },
+                    { name: "Supernova (Ultimate Ability)", description: "Detonate in massive explosion devastating entire battlefield with intense heat and fire damage." },
+                    { name: "Flame On!", description: "Activate full-body ignition for flight mode with enhanced mobility and fire immunity." },
+                    { name: "Fireball", description: "Launch explosive projectiles that create area-of-effect fire damage zones." },
+                    { name: "Flame Dash", description: "Burst forward in flames, damaging enemies in path." },
+                    { name: "Inferno (Passive)", description: "Deal additional burning damage over time to hit enemies." }
                 ]
             },
             {
@@ -863,10 +929,12 @@
                 season: "Season 2",
                 description: "Ben Grimm's rocky exterior and superhuman strength make him the ultimate protector. The Thing excels at absorbing damage and disrupting enemy formations with his massive presence.",
                 abilities: [
-                    { name: "Rock Barrage", description: "Primary ranged attack launching rock projectiles at enemies" },
-                    { name: "Ground Slam", description: "Area damage attack that creates shockwaves and disrupts enemies" },
-                    { name: "Rock Shield", description: "Protective stance that reduces incoming damage and reflects projectiles" },
-                    { name: "Clobberin' Time", description: "Ultimate enhancement that boosts all physical abilities and damage resistance" }
+                    { name: "Rock Punch (Normal attack)", description: "Strike with massive stone fists dealing heavy close-range damage." },
+                    { name: "Clobberin' Time (Ultimate Ability)", description: "Activate enhancement boosting all physical abilities and massive damage resistance." },
+                    { name: "Yancy Street Knuckles", description: "Execute devastating uppercut launching enemies skyward." },
+                    { name: "Rock Barrage", description: "Launch rock projectiles at range for sustained damage." },
+                    { name: "Thing Shield", description: "Enter protective stance reducing incoming damage and reflecting projectiles." },
+                    { name: "Rocky Hide (Passive)", description: "Natural armor provides constant damage reduction." }
                 ]
             },
             {
@@ -876,10 +944,12 @@
                 season: "Season 2",
                 description: "Reed Richards uses his elasticity and scientific genius to support his team through battlefield control and utility. His stretching abilities allow for unique tactical opportunities and crowd control.",
                 abilities: [
-                    { name: "Elastic Punch", description: "Primary stretching attacks with extended reach and knockback" },
-                    { name: "Elastic Strike", description: "Extended reach attacks that can hit distant enemies around cover" },
-                    { name: "Shield Ally", description: "Stretch around allies to absorb damage for them and provide protection" },
-                    { name: "Fantastic Crush", description: "Ultimate ability using maximum elasticity for devastating area control" }
+                    { name: "Elastic Launcher (Normal attack)", description: "Fire stretched fists at range with extended reach." },
+                    { name: "Fantastic Crush (Ultimate Ability)", description: "Use maximum elasticity for devastating area control and massive damage." },
+                    { name: "Stretching Strike", description: "Execute extended reach attacks hitting distant enemies around cover." },
+                    { name: "Slingshot", description: "Stretch and launch forward for rapid mobility." },
+                    { name: "Elastic Shield", description: "Wrap around allies to absorb damage and provide protection." },
+                    { name: "Malleable Form (Passive)", description: "Take reduced damage from physical attacks due to elasticity." }
                 ]
             },
             {
@@ -889,10 +959,12 @@
                 season: "Season 2",
                 description: "The White Queen combines telepathic powers with her diamond form transformation. Emma Frost provides both mental manipulation and incredible defensive capabilities as a unique vanguard.",
                 abilities: [
-                    { name: "Psychic Orb", description: "Primary telepathic attacks that pierce through enemy defenses" },
-                    { name: "Diamond Form", description: "Transformation granting massive damage resistance and immunity to mental effects" },
-                    { name: "Psychic Barrier", description: "Mental shields that protect allies from damage and debuffs" },
-                    { name: "Psychic Storm", description: "Ultimate telepathic assault affecting multiple enemies with mind control" }
+                    { name: "Psychic Missile (Normal attack)", description: "Fire telepathic attacks piercing through enemy defenses." },
+                    { name: "Psychic Storm (Ultimate Ability)", description: "Unleash telepathic assault affecting multiple enemies with powerful mind control." },
+                    { name: "Diamond Form", description: "Transform granting massive damage resistance and immunity to mental effects and crowd control." },
+                    { name: "Psychic Barrier", description: "Create mental shields protecting allies from damage and debuffs." },
+                    { name: "Mind Control", description: "Temporarily control enemy actions and movement." },
+                    { name: "Telepathic Resilience (Passive)", description: "Resist crowd control effects and mental attacks." }
                 ]
             },
             {
@@ -902,14 +974,16 @@
                 season: "Season 2",
                 description: "The artificial intelligence Ultron brings advanced robotics and tactical analysis to support his team. His mechanical nature provides unique utility through drone deployment and technological warfare.",
                 abilities: [
-                    { name: "Energy Beam", description: "Primary focused energy attacks with high precision and damage" },
-                    { name: "Drone Swarm", description: "Deploy mechanical drones that heal allies and damage enemies" },
-                    { name: "Anti-Gravity Field", description: "Manipulate battlefield positioning by lifting enemies and allies" },
-                    { name: "Age of Ultron", description: "Ultimate mechanical enhancement boosting all technological abilities" }
+                    { name: "Gamma Ray (Normal attack)", description: "Fire focused energy beams with high precision and damage." },
+                    { name: "Age of Ultron (Ultimate Ability)", description: "Deploy mechanical enhancement boosting all technological abilities and summoning multiple combat drones." },
+                    { name: "Sentinel Swarm", description: "Release mechanical drones that heal allies and damage enemies automatically." },
+                    { name: "Gravity Field", description: "Create anti-gravity zone manipulating battlefield positioning by lifting enemies and allies." },
+                    { name: "Nanite Repair", description: "Use nanobots to heal and repair allies over time." },
+                    { name: "Machine Intelligence (Passive)", description: "Reveal enemy positions and weak points to team." }
                 ]
             },
             
-            // Season 3.5 Characters (Latest - August 2025)
+            // Season 3.5 Characters (Latest)
             {
                 name: "Blade",
                 role: "duelist",
@@ -918,12 +992,13 @@
                 isNew: true,
                 description: "Half-human and half-vampire, Eric Brooks walks between worlds as the ultimate vampire hunter. Blade wields the Swords of Dracula and uses his vampiric abilities to become the nightmare of any foe who dares to bare their fangs.",
                 abilities: [
-                    { name: "Ancestral Sword", description: "Primary melee combo attacks with fast strikes and moderate damage (22 damage per slash)" },
-                    { name: "Hunter's Shotgun", description: "Alternative ranged weapon firing slug projectiles that break into shrapnel (45 initial damage, 8 per shrapnel)" },
-                    { name: "Daywalker Dash", description: "Traversal attack with different effects - sword causes whirlwind slash and slow, shotgun causes knockback and healing reduction" },
-                    { name: "Bloodline Awakening", description: "Toggle state granting movement speed, lifesteal, and attack speed buildup, but reduces healing received" },
-                    { name: "Scarlet Shroud", description: "Defensive parry providing 80% damage reduction and unstoppable for 0.4 seconds" },
-                    { name: "Thousand-Fold Slash", description: "Ultimate charge-dash attack dealing 100 direct damage plus 225/s field damage over 2 seconds" }
+                    { name: "Ancestral Sword (Normal attack)", description: "Execute fast melee combo strikes dealing 22 damage per slash with rapid attack speed." },
+                    { name: "Hunter's Shotgun (Normal attack)", description: "Fire slug projectiles that break into shrapnel dealing 45 initial damage and 8 per shrapnel piece." },
+                    { name: "Thousand-Fold Slash (Ultimate Ability)", description: "Charge forward in devastating dash attack dealing 100 direct damage plus 225 damage per second field over 2 seconds." },
+                    { name: "Daywalker Dash", description: "Execute traversal attack with dual effects - sword causes whirlwind slash with slow, shotgun causes knockback with healing reduction." },
+                    { name: "Bloodline Awakening", description: "Toggle enhanced state granting movement speed, lifesteal, and attack speed buildup, but reduces healing received." },
+                    { name: "Scarlet Shroud", description: "Activate defensive parry providing 80% damage reduction and unstoppable status for 0.4 seconds." },
+                    { name: "Vampire Hunter (Passive)", description: "Deal bonus damage to low-health enemies and gain enhanced tracking." }
                 ]
             },
             
@@ -935,10 +1010,12 @@
                 season: "Launch",
                 description: "Adam Warlock brings cosmic power and soul manipulation to support his allies. His connection to the Soul Stone allows him to provide powerful healing and resurrection abilities.",
                 abilities: [
-                    { name: "Soul Blast", description: "Primary cosmic energy attacks that can pierce through enemies" },
-                    { name: "Karmic Revival", description: "Resurrect fallen teammates with enhanced abilities temporarily" },
-                    { name: "Soul Bond", description: "Link with allies to share damage and provide mutual support" },
-                    { name: "Avatar", description: "Ultimate transformation granting flight and enhanced cosmic abilities" }
+                    { name: "Quantum Magic (Normal attack)", description: "Fire cosmic energy attacks that pierce through enemies." },
+                    { name: "Avatar Life Stream", description: "Heal allies by forming a stream of healing energy." },
+                    { name: "Karmic Revival (Ultimate Ability)", description: "Resurrect fallen teammates with temporarily enhanced abilities and bonus health." },
+                    { name: "Soul Bond", description: "Link with allies to share damage and provide mutual support and healing." },
+                    { name: "Regeneration Cocoon (passive)", description: "Once dead, Adam's body can freely move as a soul and revive himself." },
+                    { name: "Cosmic Cluster", description: "Gain Quantum energy into a cluster and launch it as enemies." }
                 ]
             },
             {
@@ -948,10 +1025,12 @@
                 season: "Launch",
                 description: "Doreen Green and her squirrel companion Tippy-Toe bring unexpected power to the battlefield. Don't let her appearance fool you - Squirrel Girl has defeated some of Marvel's most powerful villains.",
                 abilities: [
-                    { name: "Squirrel Swarm", description: "Primary attack summoning squirrels to overwhelm enemies" },
-                    { name: "Tail Strike", description: "Melee attacks with enhanced reach and knockback using her powerful tail" },
-                    { name: "Heroic Leap", description: "High mobility jump attack that can traverse great distances" },
-                    { name: "Unbeatable", description: "Ultimate ability that makes her temporarily invincible while dealing massive damage" }
+                    { name: "Squirrel Blaster (Normal attack)", description: "Fire acorn projectiles that summon squirrels to attack." },
+                    { name: "Unbeatable (Ultimate Ability)", description: "Become temporarily invincible while dealing massive damage with enhanced squirrel swarm." },
+                    { name: "Squirrel Swarm", description: "Summon multiple squirrels to overwhelm and distract enemies." },
+                    { name: "Tail Strike", description: "Execute melee attacks with enhanced reach and knockback using powerful tail." },
+                    { name: "Heroic Leap", description: "Perform high mobility jump traversing great distances." },
+                    { name: "Squirrel Sense (Passive)", description: "Detect nearby enemies and gain bonus movement speed." }
                 ]
             },
             {
@@ -961,10 +1040,12 @@
                 season: "Launch",
                 description: "Danny Rand channels the mystical power of the Iron Fist through martial arts mastery. His chi-enhanced abilities make him a formidable close-combat specialist with spiritual energy attacks.",
                 abilities: [
-                    { name: "Iron Fist Strike", description: "Primary chi-enhanced punches with spiritual energy damage" },
-                    { name: "Dragon Kick", description: "Powerful kick attacks that can launch enemies across the battlefield" },
-                    { name: "Chi Dash", description: "Enhanced mobility using spiritual energy for rapid repositioning" },
-                    { name: "Heart of Shou-Lao", description: "Ultimate chi enhancement that dramatically boosts all combat abilities" }
+                    { name: "Iron Fist Strike (Normal attack)", description: "Deliver chi-enhanced punches with spiritual energy damage." },
+                    { name: "Heart of Shou-Lao (Ultimate Ability)", description: "Channel ultimate chi enhancement dramatically boosting all combat abilities and damage." },
+                    { name: "Dragon Kick", description: "Execute powerful kick attacks launching enemies across battlefield." },
+                    { name: "Chi Dash", description: "Use spiritual energy for rapid repositioning and enhanced mobility." },
+                    { name: "Healing Chi", description: "Channel chi energy to restore health over time." },
+                    { name: "Iron Fist Fury (Passive)", description: "Build chi with attacks, increasing damage output." }
                 ]
             },
             {
@@ -974,10 +1055,61 @@
                 season: "Launch",
                 description: "Tyrone Johnson and Tandy Bowen work as a duo, combining darkness and light powers. Cloak provides teleportation and crowd control while Dagger offers healing and offensive light abilities.",
                 abilities: [
-                    { name: "Light Daggers", description: "Primary ranged attacks with healing light projectiles that can damage enemies" },
-                    { name: "Darkforce Portal", description: "Create teleportation portals for team mobility and tactical positioning" },
-                    { name: "Healing Light", description: "Restore ally health and provide protective light-based buffs" },
-                    { name: "Divine Pairing", description: "Ultimate ability combining light and dark powers for massive area effects" }
+                    { name: "Light Daggers (Normal attack)", description: "Throw healing light projectiles that damage enemies or heal allies." },
+                    { name: "Divine Pairing (Ultimate Ability)", description: "Combine light and dark powers for massive area effects dealing damage and providing healing simultaneously." },
+                    { name: "Darkforce Dimension", description: "Create teleportation portals for team mobility and tactical positioning." },
+                    { name: "Healing Light", description: "Channel Dagger's power to restore ally health and provide protective buffs." },
+                    { name: "Terror Cloak", description: "Use Cloak's darkness to frighten and slow enemies." },
+                    { name: "Light and Dark (Passive)", description: "Swap between Cloak and Dagger's abilities dynamically." }
+                ]
+            },
+            {
+                name: "Pheonix",
+                role: "duelist",
+                emoji: "🔥",
+                season: "S3",
+                description: "Jean Grey channels the cosmic power of the Phoenix Force, wielding immense telepathic and telekinetic abilities. As one of the most powerful mutants, Phoenix can manipulate matter and energy on a massive scale.",
+                abilities: [
+                    { name: "Cosmic Flames (Normal attack)", description: "Fire devastating energy blasts that incinerate enemies and inflicts damage." },
+                    { name: "Telekinesis Burst (Ultimate Ability)", description: "Unleash a massive telekinetic wave that devastates the battlefield, dealing heavy damage to all enemies." },
+                    { name: "Dark Ascent", description: "Enter a state of free flight by merging with the flaming Phoenix." },
+                    { name: "Telepathic Illusion", description: "Instantly teleport to a targeted location and create an illusion, after detonating the illusion, this will deal damage to nearby enemies." },
+                    { name: "Endsong Inferno", description: "Crash down onto enemies by soaring into the sky and then slaming down, creating a shockwave that deals damage to enemies whilst also destroying enemy summons, shields and any Bonus Health." }
+                ]
+            },
+            { 
+                name: "Angela",
+                role: "vanguard",
+                emoji: "🪽",
+                season: "S4",
+                description: "Angela, the angelic warrior, wields divine powers and excels in both offense and defense. With her celestial abilities, she can protect allies and smite foes with heavenly wrath.",
+                abilities: [
+                    { name: "Spear of Ichors (Normal attack)", description: "Lunch a spear forwards dealing damage to enemies and increasing attack charge. Once the attack charge is at full capacity, the Spear of Ichor can launch enemies into the air." },
+                    { name: "Axes of Ichors (Normal attack)", description: "Strike enemies with twin axes. Damage to enemies increases as Attack Charge builds up. The fourth strike will propel Angela forwards. " },
+                    { name: "Shielded Stance", description: "Transform the Shield and Axes of Inchors into a shield, blocking damage from enemies and also gain Attack Charge by absorbing damage." },
+                    { name: "Seraphic Soar (Passive)", description: "Freely glide through the air. Angela also builds up Attack Charge by flying continuously." },
+                    { name: "Divine Judgement", description: "Switch to twin axes and infuse the ground with Ichors by diving downards and creating a Divine Judgement Zone. Within the zone, Angela gains enhanced Speed and Bonus Health is granted to herself and nearby allies from enemy attacks. "},
+                    { name: "Wingblade Ascent", description: "Take to the skies with wingblade flight, also switching back to Spear of Ichors." },
+                    { name: "Assassin's Charge", description: "Enter into an accelerated dash slate. Any enemies that are struck head-on are sent flying into the air and carried for a short distance. " },
+                    { name: "Heven's Retribution (Ultimate Ability)", description: "Wrap the spear in ribbons and hurl it into the ground. Upon impact, the ribbons will bind any nearby enemies to the pole. Angela can then leap to the spear's location, dealing massive damage to bound enemies and creating a Divine Judgement Zone." }
+                ]
+            },
+            { 
+                name: "Daredevil",
+                role: "duelist",
+                emoji: "👹",
+                season: "S4.5",
+                description: "Matt Murdock, the blind vigilante known as Daredevil, uses his heightened senses and acrobatic skills to fight crime. His mastery of martial arts and agility make him a formidable duelist in close combat.",
+                abilities: [
+                    {name: "Justice Jab (Normal attack)", description: "Swing Billy Clubs forwards at enemies. Gain Fury on impact." },
+                    { name: "Righteous Cross (Normal attack)", description: "Make a cross with Billy Clubs and surge forwards. Gain Fury on impact. "},
+                    { name: "Objection!", description: "Whirl the Billy Clubs to block frontal damage and reflect enemy projectiles, becoming immune to damage during the stance and also gain Fury."},
+                    { name: "Devil's Latch", description: "Fire a grappling line that propels Daredevil and his targeted enemy towards each other. On impact, gain Fury and enable Cross Interrorgation." },
+                    { name: "Infernal Fury", description: "Use Fury to unleash Devil's Chain of Devil's Throw. Devil's chain converts damage to enemies into Bonus Health, whilst Devil's Throw slows down struck enemies and temporarily enables Cross Interrorgation. "},
+                    { name: "Sonic Pursuit", description: "Lock onto a target and gain increased speed and damage Reduction when attacked by an enemy. While in range, Daredevil can dash to the target which blinds them and restores Fury. "},
+                    { name: "Radar Sense (Passive)", description: "Detect enemy movement in a set radius around Daredevil. "},
+                    { name: "Blind Ascent", description: "Run along walls and spring off them. "},
+                    { name: "Let the Devil Out (Ultimate Ability)", description: "Unleash the Beast within Daredevil. Enemies in Daredevil's line of sight will take damage and suffer Blindness. Daredevil will continually gain Fury while in this state." }
                 ]
             }
         ];
@@ -1224,4 +1356,3 @@
     </script>
 </body>
 </html>
-
