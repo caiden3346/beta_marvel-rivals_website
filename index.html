@@ -605,11 +605,14 @@
                 season: "Launch",
                 description: "This genetically enhanced raccoon provides tactical support through advanced weaponry and battlefield gadgets. Rocket's engineering expertise makes him invaluable for area control and team support.",
                 abilities: [
-                    { name: "Burst Fire (Normal attack)", description: "Rapid-fire weapon system for sustained damage output." },
-                    { name: "Strategic Command (Ultimate Ability)", description: "Coordinate team-wide tactical advantages and buffs." },
-                    { name: "Jetpack", description: "Activate aerial mobility for elevated shooting positions." },
-                    { name: "C4 Explosives", description: "Deploy remote-detonated mines for area denial and crowd control." },
-                    { name: "Repair Mode", description: "Provide healing and armor restoration to allies and turrets." }
+                    { name: "Bombard mode (Normal attack)", description: "Rapid-fire energy projectiles that deals damage to the enemy team." },
+                    { name: "Repair Mode", description: "Shoot spheres of healing that bounce around the battlefield to heal allies." },
+                    { name: "C.Y.A (Ultimate Ability)", description: "Deploy a Cosmic Yarn Amplifier (C.Y.A) that gives allies a Damage Boost and a Health Boost." },
+                    { name: "Jetpack Dash", description: "Dash forwards quickly to evade attacks." },
+                    { name: "B.R.B", description: "Deploy a Battle Rebirth Beacon that will revive a fallen ally." },
+                    { name: "Wild Crawl (Passive Ability)", description: "Run on walls." },
+                    { name: "Flying Ace (Passive Ability)", description: "Fall slowly while in the air." }
+
                 ]
             },
             {
@@ -620,9 +623,9 @@
                 description: "I am Groot! This tree-like being serves as a living barrier, using his regenerative abilities and wooden strength to protect allies while controlling battlefield positioning.",
                 abilities: [
                     { name: "Vine Strike (Normal Attack)", description: "Launch Vines to inflict damage to the enemy." },
-                    { name: "Strangling Prison (Ultimate Ability)", description: "Fire a massive vine cluster that imprisons the enemy team." },
-                    { name: "Thornlash Wall", description: "Grow a Thornlash Wall. When placed, it inflicts damage onto enemies that are attacked by Groot or his allies." },
-                    { name: "Ironwood Wall", description: "Grow an Ironwood Wall. When placed, it inflicts damage onto the enemy team that are attacked by Groot and his allies. It also gives bonus health to Groot." },
+                    { name: "Strangling Prison (Ultimate Ability)", description: "Fire a massive vine cluster that traps the enemy team in place." },
+                    { name: "Thornlash Wall", description: "Grow a Thornlash Wall. When placed, it periodically inflicts damage onto enemies that are attacked by Groot or his allies." },
+                    { name: "Ironwood Wall", description: "Grow an Ironwood Wall. When placed, it periodically inflicts damage onto the enemy team that are attacked by Groot and his allies. It also gives bonus health to Groot." },
                     { name: "Spore Bomb", description: "Throw a Spore Bomb at the enemy to inflict damage." },
                     { name: "Flora Colossus (Passive)", description: "Awakens walls when Groot or allies are nearby, granting additional effects." }
                 ]
@@ -631,7 +634,7 @@
                 name: "Peni Parker",
                 role: "vanguard",
                 season: "Launch",
-                icon: "/icon/peni_parker.png",
+                emoji: "🕷️",
                 description: "Young pilot of the SP//dr mech suit, Peni provides technological protection and support. Her spider-powers combined with advanced machinery make her a unique defensive specialist.",
                 abilities: [
                     { name: "Cyber-Web Cluster (Normal Attack)", description: "Launch a web-cluster to inflict damage onto the enemy." },
@@ -650,11 +653,12 @@
                 season: "Launch",
                 description: "Ororo Munroe commands the elemental forces of weather as Storm. Her atmospheric control abilities make her a versatile duelist capable of both ranged attacks and battlefield manipulation.",
                 abilities: [
-                    { name: "Lightning Lash (Normal attack)", description: "Strike with electrical attacks that can chain between enemies." },
-                    { name: "Omega Hurricane (Ultimate Ability)", description: "Summon ultimate weather control affecting the entire battlefield with lightning and powerful winds." },
-                    { name: "Lightning Strike", description: "Call down targeted electrical attacks that can bounce between multiple enemies." },
-                    { name: "Wind Boost", description: "Enhance mobility through weather manipulation and gain flight capabilities." },
-                    { name: "Atmospheric Pressure (Passive)", description: "Build up energy from dealing damage to enhance abilities." }
+                    { name: "Wind Blade (Normal attack)", description: "Strike with wind blades that deals damage to enemies." },
+                    { name: "Omega Hurricane (Ultimate Ability)", description: "Summon and transform into a massive hurricane that draws in nearby enemies and deals damage." },
+                    { name: "Weather Control", description: "Change the weather to empower allies. Tornado grants a movement boost and Thunder grants a Damage Boost." },
+                    { name: "Goddess boost", description: "Empower Storm by channeling the weather. Tornado grants a Movement Boost and slows enemies down and Thunder grants a Damage Boost. Storm also summons lightning to inflict damage onto enemies." },
+                    { name: "Bolt Rush", description: "Throw a lightning bolt forwards." }
+
                 ]
             },
             {
@@ -681,10 +685,10 @@
                 description: "Peter Quill leads the Guardians with his dual energy pistols and tactical expertise. Star-Lord's balanced approach to combat makes him an effective duelist with both offensive and mobility options.",
                 abilities: [
                     { name: "Element Guns (Normal attack)", description: "Fire dual pistols with multiple elemental ammunition types for sustained damage." },
-                    { name: "Star-Lord (Ultimate Ability)", description: "Channel Celestial heritage for massive enhanced combat performance." },
-                    { name: "Rocket Propulsion Boots", description: "Activate jet boots for aerial mobility with directional control and high-speed movement." },
-                    { name: "Stellar Shift", description: "Quick dash ability for rapid repositioning during combat." },
-                    { name: "Galactic Legend (Passive)", description: "Provide team coordination buffs and tactical advantages for nearby allies." }
+                    { name: "Galactic Legend (Ultimate Ability)", description: "Lock onto enemies in sight and enter free-flight." },
+                    { name: "Rocket Propulsion", description: "Activate jet boots for aerial mobility with directional control and high-speed movement." },
+                    { name: "Blaster Barrage", description: "Fire a rapid series of shots that cause damage to nearby enemies." },
+                    { name: "Stellar Shift", description: "Shift around the battlefield, dodging enemy attacks and swiftly reloading." }
                 ]
             },
             {
@@ -694,11 +698,13 @@
                 season: "Launch",
                 description: "Mantis provides crucial healing and emotional support through her empathic abilities. Her unique powers allow her to boost ally morale while disrupting enemy coordination.",
                 abilities: [
-                    { name: "Spore Blast (Normal attack)", description: "Fire projectile attacks that can put enemies to sleep." },
-                    { name: "Soul Resurgence (Ultimate Ability)", description: "Perform mass revival and healing that can revive fallen teammates with enhanced health." },
-                    { name: "Life Orb", description: "Launch healing projectiles that restore ally health and provide temporary buffs." },
-                    { name: "Spore Sleep", description: "Create area sleep effect that incapacitates multiple enemies simultaneously." },
-                    { name: "Nature's Blessing", description: "Provide healing over time to connected allies." }
+                    { name: "Life energy Blast (Normal attack)", description: "Fire an energy thorn that deals damage to the enemy." },
+                    { name: "Soul Resurgence (Ultimate Ability)", description: "Grant allies Healing Over Time and Movement Boosts." },
+                    { name: "Spore Slumber", description: "Throw a spore than will send the struck enemy to sleep. "},
+                    { name: "Allied Inspiration", description: "Consume Life orbs and grant allies a Damage Boost by inspiring them." },
+                    { name: "Natural Anger", description: "Consume Life orbs and grant Mantis a Damage Boost by embracing her anger." },
+                    { name: "Healing Flower", description: "Consume Life Orbs to heal allies. "},
+                    { name: "Nature's Flower (Passive Ability)", description: "Generate a Movement Boost when not injured and Healing Over Time when consuming a Life Orb." }
                 ]
             },
             {
@@ -708,11 +714,13 @@
                 season: "Launch",
                 description: "Frank Castle brings military precision and overwhelming firepower to eliminate targets with extreme prejudice. The Punisher's arsenal makes him one of the most dangerous duelists in close and mid-range combat.",
                 abilities: [
-                    { name: "Assault Rifle (Normal attack)", description: "Fire high-damage automatic weapon with sustained fire capability." },
-                    { name: "Nanotech Armor (Ultimate Ability)", description: "Activate defensive enhancement with weapon upgrades and significant damage resistance." },
-                    { name: "Smoke Grenade", description: "Deploy area denial and concealment for tactical positioning and escape." },
-                    { name: "Scourge Turret", description: "Place deployable automated weapon system for area control." },
-                    { name: "Combat Reload", description: "Enhanced reload speed and weapon handling." }
+                    { name: "Adjudication (Normal attack)", description: "Fire at enemies with an Automatic Rifle called Adjudication." },
+                    { name: "Deliverance", description: "Fire at enemies with a Shotgun called Deliverance." },
+                    { name: "Final Judgement (Ultimate Ability)", description: "Unleash two huge Gatling guns and missiles and inflict massive damage onto the enemy team." },
+                    { name: "Vantage Connection", description: "Launch a hook with a cable and connect to vantage points for increased mobility." },
+                    { name: "Culling Turret", description: "Deploy a Culling Turret that will ground Punisher and block damage with a shield at the front of the Turret whilst dealing massive damage onto the enemy team. " },
+                    { name: "Scourage Grenade", description: "Throw a smoke grenade to obscure enemy vision. "},
+                    { name: "Warrior's Gaze (Passive Ability)", description: "Retain vision of enemies that disappear from sight for a short duration." }
                 ]
             },
             {
@@ -722,11 +730,12 @@
                 season: "Launch",
                 description: "Wanda Maximoff wields chaos magic with reality-warping potential. As one of the most powerful beings in the Marvel universe, Scarlet Witch can manipulate probability and matter at a molecular level.",
                 abilities: [
-                    { name: "Chaos Magic (Normal attack)", description: "Fire reality-warping projectiles that phase through barriers and obstacles." },
+                    { name: "Chaos Control (Normal attack)", description: "Unleash Chaos magic that deals damage on enemies and restores Chaos Energy." },
                     { name: "Reality Erasure (Ultimate Ability)", description: "Unleash devastating chaos magic that can alter reality and devastate enemies." },
-                    { name: "Mystic Protection", description: "Generate magical shields that absorb and redirect incoming damage." },
-                    { name: "Chthon's Grasp", description: "Use telekinetic force to move objects and enemies for positioning control and damage." },
-                    { name: "Dark Seal", description: "Mark enemies with chaos magic for enhanced damage." }
+                    { name: "Mystic Protection", description: "Enter a phased state and fly around the map for a short amount of time." },
+                    { name: "Dark Seal", description: "Mark enemies with chaos magic for enhanced damage or summon a Force Field that will periodically stun enemies." },
+                    { name: "Telekinesis", description: "Fall Slowly while in the air." },
+                    { name: "Chthonian Burst", description: "Consume Chaos Energy and fire explosive missiles that deal damage to enemies." }
                 ]
             },
             {
@@ -736,11 +745,14 @@
                 season: "Launch",
                 description: "Goddess of Death from Asgard, Hela commands necromantic powers and infinite blade generation. Her mastery over death magic makes her a terrifying duelist with overwhelming offensive capabilities.",
                 abilities: [
-                    { name: "Goddess of Death (Normal attack)", description: "Fire projectile attacks with death magic properties that pierce enemies." },
-                    { name: "Subjugate (Ultimate Ability)", description: "Activate necromancy that can instantly eliminate weakened foes and deal massive area damage." },
-                    { name: "Necrosword", description: "Conjure blades with death magic properties for devastating melee combat." },
-                    { name: "Piercing Night", description: "Launch projectile attacks that ignore defensive abilities and pierce through multiple enemies." },
-                    { name: "Soul Drainer", description: "Drain life force from enemies to restore health." }
+                    { name: "Nightsword Thorn (Normal attack)", description: "Fire projectile attacks of Nightsword Thorns to deal damage at the enemy." },
+                    { name: "Goddess of Death (Ultimate Ability)", description: "Fly into the sky and unleash Nastrond Crows onto the battlefield from above and deal damage to the enemy team. "},
+                    { name: "Astral Flock", description: "Transform into a Nastrond Crow and glide forwards. Hela also gains Bonus Health when transforming into and out of a Nastrond Crow." },
+                    { name: "Soul Drainer", description: "Throw an explosive Hel sphere that Stuns targeted enemies and pulls them into a blast zone. " },
+                    { name: "Piercing Night", description: "Fire multiple Nightsword Thorns at enemies that also detonate after a short duration to increase the amount of damage dealt." },
+                    { name: "Nastrond Crowstorm (Passive Ability)", description: "After defeating an enemy, a Nastrond Crow will be generated and explode after a duration. "},
+                    { name: "Hel's Descent (Passive Ability)", description: "Fall slowly while in the air." }
+
                 ]
             },
             {
@@ -766,11 +778,13 @@
                 season: "Launch",
                 description: "Logan brings his adamantium claws and healing factor into brutal close-quarters combat. Wolverine's berserker rage and regenerative abilities make him nearly unstoppable in melee combat.",
                 abilities: [
-                    { name: "Adamantium Claws (Normal attack)", description: "Slash with razor-sharp claws that can cut through almost any material." },
-                    { name: "Last Stand (Ultimate Ability)", description: "Unleash maximum berserker potential with temporary invulnerability and enhanced damage." },
-                    { name: "Lethal Leap", description: "Perform leap attack combining mobility and claw strikes for high burst damage." },
-                    { name: "Berserker Barrage", description: "Execute rapid claw strikes with increased attack speed." },
-                    { name: "Regenerative Healing Factor (Passive)", description: "Continuously regenerate health, with increased healing at low health." }
+                    { name: "Savage Claw (Normal attack)", description: "Slash with razor-sharp Adamantium claws for a Claw Strike that can deal damage to enemies." },
+                    { name: "Last Stand (Ultimate Ability)", description: "Unleash maximum berserker potential with temporary invulnerability and enhanced damage. Sweep up enemies along the path." },
+                    { name: "Feral Leap", description: "Perform a leap attack that snatches the enemy and smashes them to the ground. Doing this ability will enhance Wolverine's normal attack to Berserk Claw Strike for a brief period of time." },
+                    { name: "Undying Animal", description: "Release a fierce howl that reduces incoming damage for a short amount of time." },
+                    { name: "Vicious Rampage", description: "Dash forwards and release a Claw Strike that damages enemies in the path." },
+                    { name: "Regenerative Healing Factor (Passive Ability)", description: "Gradually regenerate health over time." },
+                    { name: "Berserker Rage (Passive Ability)", description: "As Wolverine gets attacked and takes on damage, Rage builds up, boosting the damage of his Claw Strikes and also receive Bonus Health." }
                 ]
             },
             {
