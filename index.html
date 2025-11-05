@@ -395,7 +395,8 @@
 <body>
     <div class="header">
         <h1>MARVEL RIVALS</h1>
-        <p>Complete Character Database & Team-Up Guide - by Caiden</p>
+        <p1>Complete Character Database & Team-Up Guide - by Caiden
+        </p1>
         <div class="stats">
             <div class="stat">
                 <div class="stat-number" id="totalHeroes">41</div>
@@ -938,12 +939,12 @@
                 season: "Season 2",
                 description: "Johnny Storm ignites the battlefield with his pyrokinetic abilities and aerial superiority. The Human Torch's fire-based attacks and flight capabilities make him a mobile damage dealer.",
                 abilities: [
-                    { name: "Flame Shot (Normal attack)", description: "Fire projectiles with burning damage over time effect." },
-                    { name: "Supernova (Ultimate Ability)", description: "Detonate in massive explosion devastating entire battlefield with intense heat and fire damage." },
-                    { name: "Flame On!", description: "Activate full-body ignition for flight mode with enhanced mobility and fire immunity." },
-                    { name: "Fireball", description: "Launch explosive projectiles that create area-of-effect fire damage zones." },
-                    { name: "Flame Dash", description: "Burst forward in flames, damaging enemies in path." },
-                    { name: "Inferno (Passive)", description: "Deal additional burning damage over time to hit enemies." }
+                    { name: "Flame Cluster (Normal attack)", description: "Launch forwards a fireball to deal damage to the enemies." },
+                    { name: "Supernova (Ultimate Ability)", description: "Explode with cosmic fire and deal damage to enemies within range. This also summons fire tornadoes which deals extra damage." },
+                    { name: "Blazing Blast", description: "Launch a fireball and create a Flame Field at the targeted area." },
+                    { name: "Flaming Meteor", description: "Dive downwards onto the battlefield, dealing damage to enemies and also detonating any hit Flame Fields." },
+                    { name: "Plasma Body", description: "Enter a state of accelerated ascent up into the sky." },
+                    { name: "Pyto-Prison", description: "Form a fire wall between Fire Fields to burn enemies and deal damage." }
                 ]
             },
             {
@@ -1140,114 +1141,9 @@
 
         const teamUps = [
             {
-                name: "Web-Warriors",
+                name: "Test",
                 members: ["Spider-Man", "Venom", "Peni Parker"],
-                effect: "Increased web-based ability damage and enhanced mobility when team members are near each other. Web abilities also provide temporary damage immunity and improved traversal speed."
-            },
-            {
-                name: "Avengers Assemble",
-                members: ["Iron Man", "Captain America", "Thor", "Hulk", "Black Widow", "Hawkeye"],
-                effect: "Classic Avengers gain increased damage resistance and ability cooldown reduction. Each fallen Avenger grants remaining members a damage boost and enhanced coordination."
-            },
-            {
-                name: "Guardians of the Galaxy",
-                members: ["Star-Lord", "Groot", "Rocket Raccoon", "Mantis"],
-                effect: "Enhanced team coordination with shared resources. When one Guardian uses their ultimate, all other Guardians gain increased ability power and reduced cooldowns."
-            },
-            {
-                name: "X-Men United",
-                members: ["Storm", "Wolverine", "Psylocke", "Magneto"],
-                effect: "Mutant powers are amplified when multiple X-Men are present. Each X-Men teammate provides increased ability power, reduced cooldowns, and enhanced damage resistance."
-            },
-            {
-                name: "Fantastic Four",
-                members: ["Mister Fantastic", "Invisible Woman", "Human Torch", "The Thing"],
-                effect: "The First Family gains massive team synergy bonuses. When all four are present, they unlock special combined abilities, enhanced survivability, and unique team-up attacks."
-            },
-            {
-                name: "Mystic Arts",
-                members: ["Doctor Strange", "Loki", "Scarlet Witch", "Magik"],
-                effect: "Magic users share mystical energy. Spell effects are enhanced and magical abilities can chain between mystic allies for increased damage and area coverage."
-            },
-            {
-                name: "Asgardians",
-                members: ["Thor", "Loki", "Hela"],
-                effect: "Divine heritage grants enhanced abilities. Asgardian gods gain increased damage and resistance, with Loki providing tactical bonuses to Thor and Hela's combat effectiveness."
-            },
-            {
-                name: "Street Level Heroes",
-                members: ["Spider-Man", "Black Panther", "The Punisher", "Black Widow", "Hawkeye"],
-                effect: "Enhanced tactical coordination and precision. Street-level heroes gain increased critical hit chance, movement speed, and improved stealth capabilities."
-            },
-            {
-                name: "Symbiote Bond",
-                members: ["Spider-Man", "Venom"],
-                effect: "Former symbiote connection provides unique synergy. Both heroes gain enhanced web abilities, shared damage resistance, and improved mobility when fighting together."
-            },
-            {
-                name: "Winter Soldiers",
-                members: ["Captain America", "Winter Soldier"],
-                effect: "Shared military training and history. Both soldiers gain enhanced tactical awareness, increased damage when fighting together, and improved weapon handling."
-            },
-            {
-                name: "Magical Mayhem",
-                members: ["Loki", "Scarlet Witch", "Doctor Strange"],
-                effect: "Reality manipulation combined with chaos magic and mystical arts creates unpredictable battlefield effects that can turn the tide of battle through magical synergy."
-            },
-            {
-                name: "Wakanda Forever",
-                members: ["Black Panther", "Storm"],
-                effect: "Royal connection between the Black Panther and former Queen of Wakanda. Enhanced coordination, shared Wakandan technology bonuses, and improved combat effectiveness."
-            },
-            {
-                name: "Underwater Alliance",
-                members: ["Namor", "Storm"],
-                effect: "Control over water and weather creates devastating combinations. Water-based attacks are enhanced and weather effects are amplified for maximum battlefield control."
-            },
-            {
-                name: "Spider-Verse",
-                members: ["Spider-Man", "Peni Parker"],
-                effect: "Multi-dimensional spider heroes share spider-sense and web abilities. Enhanced mobility, danger detection, and improved web-based attack coordination for all spider heroes."
-            },
-            {
-                name: "Martial Artists",
-                members: ["Black Panther", "Wolverine", "Psylocke", "Iron Fist"],
-                effect: "Expert combat training and enhanced reflexes. Increased melee damage, counter-attack abilities, and improved close-combat coordination between martial arts masters."
-            },
-            {
-                name: "Tech Geniuses",
-                members: ["Iron Man", "Mister Fantastic", "Rocket Raccoon"],
-                effect: "Shared technological knowledge enhances all tech-based abilities. Faster ability cooldowns, enhanced gadget effectiveness, and improved technological warfare capabilities."
-            },
-            {
-                name: "Psychic Network",
-                members: ["Emma Frost", "Psylocke"],
-                effect: "Telepathic connection between psychic mutants. Enhanced mental abilities, shared psychic defenses against enemy powers, and coordinated mental attacks."
-            },
-            {
-                name: "Fire and Ice",
-                members: ["Human Torch", "Luna Snow"],
-                effect: "Opposing elemental forces create unique battlefield effects. Fire and ice abilities can combine for devastating temperature-based attacks and environmental control."
-            },
-            {
-                name: "Animal Instincts",
-                members: ["Wolverine", "Black Panther", "Jeff the Land Shark"],
-                effect: "Enhanced predator senses and hunting abilities. Increased tracking of enemies, enhanced critical hit damage, and improved stealth and ambush tactics."
-            },
-            {
-                name: "Cosmic Misfits",
-                members: ["Star-Lord", "Rocket Raccoon", "Groot", "Mantis", "Jeff the Land Shark"],
-                effect: "Unlikely heroes unite for enhanced teamwork. Each unique member provides different bonuses to the team's overall effectiveness and combat coordination."
-            },
-            {
-                name: "Lunar Force",
-                members: ["Cloak & Dagger", "Moon Knight", "Blade"],
-                effect: "Light and dark energy combined with mystical powers. Cloak & Dagger can inject energy into Moon Knight and Blade, creating invisibility fields with healing over time and enhanced combat abilities."
-            },
-            {
-                name: "AI Alliance",
-                members: ["Iron Man", "Ultron", "Peni Parker"],
-                effect: "Advanced artificial intelligence coordination. Enhanced technological abilities, improved tactical analysis, and synchronized robotic/mechanical systems for superior battlefield control."
+                effect: "test."
             }
         ];
 
@@ -1285,7 +1181,7 @@
                     <span class="character-role role-${character.role}">${character.role.toUpperCase()}</span>
                     <p class="character-description">${character.description}</p>
                     <div class="abilities">
-                        <h4>Complete Abilities</h4>
+                        <h4>Abilities</h4>
                         ${character.abilities.map(ability => `
                             <div class="ability">
                                 <span class="ability-name">${ability.name}:</span>
