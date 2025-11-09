@@ -172,6 +172,8 @@
 
         .content {
             padding: 0 2rem 2rem;
+            max-width: 1600px;
+            margin: 0 auto;
         }
 
         .characters-grid {
@@ -179,6 +181,7 @@
             grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
+            justify-items: center;
         }
 
         .character-card {
@@ -187,6 +190,8 @@
             overflow: hidden;
             transition: all 0.3s ease;
             border: 2px solid transparent;
+            width: 100%;
+            max-width: 450px;
         }
 
         .character-card:hover {
@@ -336,6 +341,14 @@
                 justify-content: center;
             }
             
+            .characters-grid {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                gap: 1.5rem;
+            }
+            
+            .content {
+                padding: 0 1rem 1rem;
+            }
         }
     </style>
 </head>
