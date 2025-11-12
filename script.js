@@ -685,7 +685,6 @@ const characters = [
                 role: "duelist",
                 emoji: "👹",
                 season: "S4.5",
-                isNew: true,
                 description: "Matt Murdock, the blind vigilante known as Daredevil, uses his heightened senses and acrobatic skills to fight crime. His mastery of martial arts and agility make him a formidable duelist in close combat.",
                 abilities: [
                     {name: "Justice Jab (Normal attack)", description: "Swing Billy Clubs forwards at enemies. Gain Fury on impact." },
@@ -697,6 +696,28 @@ const characters = [
                     { name: "Radar Sense (Passive)", description: "Detect enemy movement in a set radius around Daredevil. "},
                     { name: "Blind Ascent", description: "Run along walls and spring off them. "},
                     { name: "Let the Devil Out (Ultimate Ability)", description: "Unleash the Beast within Daredevil. Enemies in Daredevil's line of sight will take damage and suffer Blindness. Daredevil will continually gain Fury while in this state." }
+                ]
+            },
+            {
+                name: "Rouge",
+                role: "N/A",
+                emoji: "💋",
+                season: "5",
+                isNew: true,
+                description: "Anna Marie, known as Rogue, possesses the ability to absorb the powers and memories of others through touch. Her unique abilities make her a versatile and unpredictable force on the battlefield.",
+                abilities: [
+                    { name: "N/A (Normal attack)", description: "N/A." }
+                ]
+            },
+            {
+                name: "Gambit",
+                role: "strategist",
+                emoji: "♠️",
+                season: "5",
+                isNew: true,
+                description: "Remy LeBeau, known as Gambit, is a charming and agile mutant with the ability to charge objects with kinetic energy, causing them to explode. His expertise in card throwing and hand-to-hand combat makes him a formidable strategist.",
+                abilities: [
+                    { name: "N/A (Normal attack)", description: "N/A." }
                 ]
             }
         ];
