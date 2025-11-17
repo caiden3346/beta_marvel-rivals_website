@@ -699,25 +699,19 @@ const characters = [
                 ]
             },
             {
-                name: "Rouge",
-                role: "N/A",
-                emoji: "💋",
-                season: "5",
-                isNew: true,
-                description: "Anna Marie, known as Rogue, possesses the ability to absorb the powers and memories of others through touch. Her unique abilities make her a versatile and unpredictable force on the battlefield.",
-                abilities: [
-                    { name: "N/A (Normal attack)", description: "N/A." }
-                ]
-            },
-            {
                 name: "Gambit",
                 role: "strategist",
                 emoji: "♠️",
                 season: "5",
                 isNew: true,
-                description: "Remy LeBeau, known as Gambit, is a charming and agile mutant with the ability to charge objects with kinetic energy, causing them to explode. His expertise in card throwing and hand-to-hand combat makes him a formidable strategist.",
+                description: "Remy LeBeau, known as Gambit, is a charming and agile mutant with the ability to charge objects with kinetic energy, causing them to explode. His expertise in card throwing and hand-to-hand combadt makes him a formidable strategist.",
                 abilities: [
-                    { name: "N/A (Normal attack)", description: "N/A." }
+                    { name: "Kinetic Cards (Normal attack)", description: "Kinetic Cards (Normal Attack)", description: "Throw three kinetic-charged cards. Each card detonates upon impact, creating a single-target explosion and damages nearby enemies and heals nearby allies. " },
+                    { name: "Ragin' Royal Flush (Ultimate Ability)", description: "Lock onto an ally within range and unleash multiple cards of Aces that heal and Purify the ally. Both Remy and the ally enter the Kinetic Transfer state, being granted increased Movement speed and a Jump Boost, while also enhancing attacks within additional single-target explosive damage to enemies. This also provides the ally with an Ultimate Ability Charge Acceleration. " },
+                    { name: "Cajun Charge", description: "Side-step forwards and dash a short distance with bo staff in Remy's hand."},
+                    { name: "Healing Hearts", description: "Conjure a Heart card by consuming one stack of Sleight of hand to heal nearby allies and also switch to the Healing Hearts deck. "},
+                    { name: "Breaking Spades", description: "Conjure a Spade card by consuming one stack of Sleight of Hand to gain a Damage Boost and switch to the Breaking Spades deck. "},
+                    { name: "Bayou Bash", description: "Channel kinetic energy into the bo staff. Then Remy can slam the staff into the ground after performing a sweeping strike, creating a shockwave that inflicts damage onto nearby enemies and heal allies."}
                 ]
             }
         ];
